@@ -1,0 +1,52 @@
+$dark: #a94848;
+$light: #d66161;
+
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+  }
+  
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+  
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+  
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+  
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
+
+
+@import "bootstrap-4.3.1/scss/bootstrap.scss";
+@import "bootstrap-4.3.1/scss/mixins/_breakpoints.scss";
+@import "bootstrap-4.3.1/scss/_variables.scss";
+@import "bootstrap-4.3.1/scss/_functions.scss";
+
+
+
