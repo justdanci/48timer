@@ -1,27 +1,36 @@
 .icon-bar {
-  width: 22px;
-  height: 2px;
-  background-color: white;
+  width: 2em;
+  height: 3px;
   display: block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin-top: 4px;
+  border-radius: 10px;
 }
 
-.navbar-nav ml-auto {
-  color: black;
+.col {
+  padding-right: 0 !important;
 }
 
-.navbar-toggler {
-  border: none;
-  background: black !important;
+.main {
+  background-color: white !important;
+}
+
+.collapse {
+  border: none !important;
+  background: transparent !important;
+  background-color: #4285F4;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0) !important;
 }
 
 .navbar-toggler .top-bar {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transform-origin: 10% 10%;
-          transform-origin: 10% 10%;
+  -webkit-transform-origin: 20% 20%;
+          transform-origin: 20% 20%;
 }
 
 .navbar-toggler .middle-bar {
@@ -31,8 +40,8 @@
 .navbar-toggler .bottom-bar {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  -webkit-transform-origin: 10% 90%;
-          transform-origin: 10% 90%;
+  -webkit-transform-origin: 30% 70%;
+          transform-origin: 30% 70%;
 }
 
 .navbar-toggler.collapsed .top-bar {
@@ -49,6 +58,56 @@
           transform: rotate(0);
 }
 
+.active {
+  color: #a94848 !important;
+}
+
+.navbar-nav {
+  font-size: 1.5em;
+}
+
+nav p {
+  margin-bottom: 0 !important;
+  font-size: 0.65em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+#timer {
+  border: 1.5px solid #a94848;
+  font-size: 2.5em;
+}
+
+.col-md-3 {
+  display: inline-block;
+  margin-left: -4px;
+}
+
+.col-md-3 img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  color: black;
+}
+
+body .no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sponsor-1 {
+  width: 8em;
+}
+
 .background {
   padding: 0 !important;
   margin: 0 auto !important;
@@ -62,6 +121,7 @@
   background: url(images/48timerbg.png);
   background-size: cover;
   background-position: center;
+  position: relative;
   height: 30rem;
 }
 
@@ -143,7 +203,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6411,7 +6471,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6524,7 +6584,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;

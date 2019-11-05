@@ -1,28 +1,43 @@
 $dark: #a94848;
 $light: #d66161;
 
+$font-family-base: 'itc-avant-garde-gothic-pro', sans-serif;
+
+// Navbar
 .icon-bar {
-	width: 22px; 
-	height: 2px;
-	background-color: white;
+	width: 2em; 
+	height: 3px;
 	display: block;
 	transition: all 0.2s;
-	margin-top: 4px
+  margin-top: 4px;
+  border-radius: 10px;
 }
 
-.navbar-nav ml-auto {
-    color: black;
+.col {
+    padding-right: 0 !important;
 }
 
-.navbar-toggler {
-  border: none;
-  background: black !important;
+.main {
+    background-color: white !important;
+    
+}
+
+
+.collapse {
+  border: none !important;
+  background: transparent !important;
+  background-color: #4285F4;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0 ,0) !important;
+
 }
 
 
 .navbar-toggler .top-bar {
     transform: rotate(45deg);
-    transform-origin: 10% 10%;
+    transform-origin: 20% 20%;
   }
   
   .navbar-toggler .middle-bar {
@@ -31,7 +46,7 @@ $light: #d66161;
   
   .navbar-toggler .bottom-bar {
     transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+    transform-origin: 30% 70%;
   }
   
   .navbar-toggler.collapsed .top-bar {
@@ -46,6 +61,55 @@ $light: #d66161;
     transform: rotate(0);
   }
 
+  .active{
+    color: #a94848 !important;
+  }
+
+  .navbar-nav{
+    font-size: 1.5em;
+  }
+
+  nav p{
+    margin-bottom: 0 !important;
+    font-size: 0.65em;
+  }
+
+  //Footer
+  footer a{
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    text-decoration: underline;
+    color: white;
+  }
+
+  //Timer
+  #timer{
+    border: 1.5px solid #a94848;
+    font-size: 2.5em;
+  }
+
+  //Carousel
+  .col-md-3{
+    display: inline-block;
+    margin-left:-4px;
+  }
+  .col-md-3 img{
+    width:100%;
+    height:auto;
+  }
+  .carousel-control-next, .carousel-control-prev{
+    color: black;
+  }
+  body .no-padding{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.sponsor-1{
+  width: 8em;
+}
 
 .background {   
   padding: 0 !important;
@@ -60,6 +124,7 @@ $light: #d66161;
     background: url(images/48timerbg.png);
     background-size: cover;
     background-position:center;
+    position: relative;
     height: 30rem;
 }
 
