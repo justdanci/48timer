@@ -1,16 +1,20 @@
 .icon-bar {
   width: 22px;
   height: 2px;
-  background-color: #fff;
+  background-color: white;
   display: block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin-top: 4px;
 }
 
+.navbar-nav ml-auto {
+  color: black;
+}
+
 .navbar-toggler {
   border: none;
-  background: transparent !important;
+  background: black !important;
 }
 
 .navbar-toggler .top-bar {
@@ -43,6 +47,43 @@
 .navbar-toggler.collapsed .bottom-bar {
   -webkit-transform: rotate(0);
           transform: rotate(0);
+}
+
+.background {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  background-size: cover;
+  overflow: hidden;
+  height: 40vh;
+}
+
+/*Main Image - Main Page*/
+.jumbotron {
+  background: url(images/48timerbg.png);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+
+.container .program {
+  background: url(images/programbg.png);
+  background-size: cover;
+  background-position: 100% 20%;
+  height: 6rem;
+}
+
+.container .volunteer {
+  background: url(images/volunteerbg.png);
+  background-size: cover;
+  background-position: 100% 20%;
+  height: 6rem;
+}
+
+.container .actor {
+  background: url(images/actorbg.png);
+  background-size: cover;
+  background-position: 100% 10%;
+  height: 6rem;
 }
 
 /*!
