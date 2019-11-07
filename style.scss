@@ -1,5 +1,6 @@
 $dark: #a94848;
 $light: #d66161;
+$primary: #3d3d3d;
 
 $font-family-base: 'itc-avant-garde-gothic-pro', sans-serif;
 
@@ -17,21 +18,21 @@ $font-family-base: 'itc-avant-garde-gothic-pro', sans-serif;
     padding-right: 0 !important;
 }
 
-.main {
-    background-color: white !important;
-    
+.navbar{
+    padding: 0 !important;
 }
 
 
 .collapse {
   border: none !important;
-  background: transparent !important;
-  background-color: #4285F4;
+}
+
+.cheat {
+    opacity: 0;
 }
 
 .navbar-light .navbar-toggler {
     border-color: rgba(0, 0, 0 ,0) !important;
-
 }
 
 
@@ -69,12 +70,19 @@ $font-family-base: 'itc-avant-garde-gothic-pro', sans-serif;
     font-size: 1.5em;
   }
 
+
+  .nav-item .text-primary:hover{
+    color: #a94848 !important;
+  }
+
+
   nav p{
     margin-bottom: 0 !important;
     font-size: 0.65em;
   }
 
   //Footer
+
   footer a{
     text-decoration: none;
   }
@@ -128,18 +136,52 @@ $font-family-base: 'itc-avant-garde-gothic-pro', sans-serif;
     height: 30rem;
 }
 
+
  .container .program {
     background: url(images/programbg.png);
+    background-color: #a94848;
     background-size: cover;
     background-position: 100% 20%;
     height: 6rem;
+    margin-bottom: 1rem;
 }
+
+.container .program:hover {
+    animation-name: background-color;
+    animation-duration: 5000ms;
+    color: #a94848 !important;
+    }
+
+    @keyframes background-color {
+        100% {
+        background: url(images/programhover.png);
+        background-size: cover;
+        background-position: 100% 20%;
+        color: #a94848 !important;
+    }
+}
+
+.container .program h3 {
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+        transition: color 1s; /* For modern browsers */
+}
+
+.container .program h3:hover {
+    color: #ff0000;
+}
+
+// .container .program:hover {
+//     background: url(images/programhover.png);
+//     background-size: cover;
+//     background-position: 100% 20%;
+// }
 
 .container .volunteer {
     background: url(images/volunteerbg.png);
     background-size: cover;
     background-position:100% 20%;
     height: 6rem;
+    margin-bottom: 1rem;
 }
 
 .container .actor {
@@ -147,6 +189,7 @@ $font-family-base: 'itc-avant-garde-gothic-pro', sans-serif;
     background-size: cover;
     background-position: 100% 10%;
     height: 6rem;
+    margin-bottom: 1rem;
 }
 
 

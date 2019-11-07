@@ -27,11 +27,3 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-//SCROLL changing navbar
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 50) {
-       $('.navbar').addClass('.main');
-    } else {
-       $('.navbar').removeClass('.main');
-    }
-});
